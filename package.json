@@ -4,6 +4,7 @@
   "description": "A container for large mutable strings with annotated regions",
   "main": "./lib/text-buffer",
   "scripts": {
+    "install": "npm-git install",
     "prepublish": "npm run clean && npm run compile && npm run lint && npm run atomdoc",
     "atomdoc": "grunt shell:update-atomdoc atomdoc",
     "clean": "grunt clean",
@@ -40,6 +41,7 @@
     "jasmine": "^2.4.1",
     "jasmine-core": "^2.4.1",
     "json-diff": "^0.3.1",
+    "npm-git-install": "^0.2.0",
     "random-seed": "^0.2.0",
     "rimraf": "~2.2.2",
     "regression": "^1.2.1",
@@ -47,7 +49,6 @@
     "yargs": "^6.5.0"
   },
   "dependencies": {
-    "superstring": "1.0.4",
     "delegato": "^1.0.0",
     "diff": "^2.2.1",
     "emissary": "^1.0.0",
@@ -57,6 +58,9 @@
     "pathwatcher": "6.7.1",
     "serializable": "^1.0.3",
     "underscore-plus": "^1.0.0"
+  },
+  "gitDependencies": {
+    "superstring": "git@github.com:arcanis/superstring"
   },
   "coffeelintConfig": {
     "no_empty_param_list": {
