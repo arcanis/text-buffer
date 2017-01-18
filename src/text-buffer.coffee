@@ -1,5 +1,4 @@
 {Emitter, CompositeDisposable, Disposable} = require 'event-kit'
-{File} = require 'pathwatcher'
 diff = require 'diff'
 _ = require 'underscore-plus'
 fs = require 'fs-plus'
